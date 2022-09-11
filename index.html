@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+<style>
+*{
+    margin:0;
+}
+body{
+    background-color: #1c1d1f;
+    font-family: "IBM Plex Mono","Menlo","DejaVu Sans Mono","Lucida Console",monospace;
+    -webkit-font-smoothing: antialiased;
+}
+.bar{
+    height:6rem;
+    justify-content:center;
+}
+h1{
+    color:white;
+    text-align:center;
+    font-size:4rem;
+}
+h1::before { 
+    content:url(img/CssbattleWhite.png);
+}
+h1::after {
+    content:url(img/CssbattleWhite.png);
+}
+.containernav{
+    display:flex;
+    flex-direction:row;
+    color:#cfcedc;
+    justify-content:center;
+}
+.navcarrom{
+    background-color:#323e4a;
+    padding:.5rem;
+}
+.navcarrom:hover{
+    background-color: #747f8a;
+}
+.navhome{
+    background-color:#323e4a;
+    padding:.5rem;
+}
+.navhome:hover{
+    background-color: #747f8a;
+}
+.navsimplysquare{
+    background-color:#323e4a;
+    padding:.5rem;
+}
+.navsimplysquare:hover{
+    background-color: #747f8a;
+}
+.Home{
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+.explanation{
+    color: #c2c6d2;
+    margin:1rem;
+}
+.what{
+    color:#c2c6d2;
+    font-size: 1.5rem;
+}
+.hometitle{
+    color: #c2c6d2;
+    margin:2rem;
+    font-size:3rem;
+}
+.Welcome{
+    background-color: #323e4a;
+    padding: 1rem;
+    color:#cfcedc;
+    font-weight:bold;
+}
+.images{
+    display:flex;
+    gap:2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: row;
+}
+</style> 
+</head>
+<body>
+    <div class="title">
+        <div class = "bar">
+            <h1> CSS BATTLE EXPLANATIONS </h1>
+            </div>
+    </div>
+    <div class = "containernav">
+        <div class = "navhome">
+            <a class="navtype"> Home </a>
+        </div>
+        <div class = "navsimplysquare">
+            <a class="navtype"> Simply Square </a>
+        </div>
+        <div class = "navcarrom">
+            <a href="carrom.html" class= "navtype"> Carrom </a>
+        </div>
+    </div>
+    <div class="Welcome"> <p class="WelcomeText"> HOME </p> </div>
+    <div class="Home">
+        <h4 class ="what"> What are CSSBattles? </h4>
+        <p class = "explanation"> CSS Battles are code-golfing games meant to test the skills of developers across the world. Coders use tbeir CSS skills to</p>
+        <p class = "explanation"> replicate targets with smallest possible code. There are multiple levels, increasing in difficulty as one goes along.</p>
+        <p class = "explanation"> This site contains some of the explanations to the first few battles. </p>
+        <br>
+        <h2 class ="what"> Here are some examples of results: </h2>
+        <div class = "images">
+        <img src="img/SimplySResult.png" alt="" width="300rem">
+        <img src="img/Absresult.png" alt="" width="300rem">
+        </div>
+    </div>
+</body>
+<html>
